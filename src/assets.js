@@ -26,7 +26,7 @@ export const hotelDatas = [
     },
     {
         id: 2,
-        image: 'https://picsum.photos/300/200?random=2',
+        image: '/hotel2.jpg',
         name: 'Ocean View Resort',
         address: '45 Beach Road, Goa',
         price: '$199',
@@ -34,7 +34,7 @@ export const hotelDatas = [
     },
     {
         id: 3,
-        image: 'https://picsum.photos/300/200?random=3',
+        image: '/hotel3.jpg',
         name: 'Mountain Retreat',
         address: '78 Hilltop Lane, Manali',
         price: '$249',
@@ -42,7 +42,7 @@ export const hotelDatas = [
     },
     {
         id: 4,
-        image: 'https://picsum.photos/300/200?random=4',
+        image: '/hotel4.jpg',
         name: 'City Lights Hotel',
         address: '56 Downtown Ave, Bangalore',
         price: '$179',
@@ -50,7 +50,7 @@ export const hotelDatas = [
     },
     {
         id: 5,
-        image: 'https://picsum.photos/300/200?random=5',
+        image: '/hotel5.jpg',
         name: 'Serenity Suites',
         address: '12 Lakeside Drive, Udaipur',
         price: '$299',
@@ -58,7 +58,7 @@ export const hotelDatas = [
     },
     {
         id: 6,
-        image: 'https://picsum.photos/300/200?random=6',
+        image: '/hotel6.avif',
         name: 'Royal Orchid Inn',
         address: '34 Garden Street, Jaipur',
         price: '$189',

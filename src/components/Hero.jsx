@@ -11,7 +11,7 @@ const Hero = () => {
     return (
 
         <>
-            <div className='  max-h-screen  flex flex-col md:flex-row max-md:text-center justify-between mt-20 md:px-10 px-2 pb-16 w-full mx-auto max-w-7xl'>
+            <div className='max-h-screen  flex flex-col md:flex-row max-md:text-center justify-between mt-20 md:px-10 px-2 pb-16 w-full mx-auto max-w-7xl'>
 
                 {/* right side */}
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className='flex flex-col items-center md:items-start '>
@@ -21,7 +21,7 @@ const Hero = () => {
                         <motion.button whileHover={{ scale: 1.2 }} transition={{ duration: 0.5, ease: 'easeInOut' }} className='bg-indigo-500 text-white rounded-md px-6 py-2.5 text-sm font-medium cursor-pointer'>Show more</motion.button>
                     </div>
 
-                    <div className='flex flex-wrap items-center gap-16 mt-8'>
+                    <div className='flex md:flex-wrap flex-nowrap items-center justify-center md:gap-16 gap-8 mt-8'>
                         {homePAgeData.map((item, index) => (
                             <motion.div key={index} animate={{ y: [0, 20, 0] }} transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }} className='flex items-center flex-col text-center'>
                                 {/* <img src={item.icon} alt="" className='w-6 h-6' /> */}
@@ -31,7 +31,7 @@ const Hero = () => {
                                 </div>
 
 
-                                <div className="flex flex-row items-center space-x-3">
+                                <div className="flex flex-row items-center md:space-x-3">
                                     <p className="text-md font-semibold ">{item.value}</p>
                                     <p className="text-md text-gray-400">{item.title}</p>
                                 </div>

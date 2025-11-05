@@ -16,7 +16,7 @@ const MostpickedHotel = () => {
             <h1 className='text-3xl font-semibold text-center mx-auto hover:underline'>Most Picked Hotels</h1>
             <p className='text-md text-center max-w-lg mx-auto text-gray-400'>Explore our top-rated rooms, loved by guests for comfort and location.</p>
 
-            <div className='flex flex-wrap items-center justify-center mt-12 gap-4 md:max-w-5xl w-full mx-auto'>
+            <div className='flex flex-wrap items-center p-2 justify-center mt-12 gap-4 md:max-w-5xl w-full mx-auto'>
                 {
                     hotelDatas.map((item, index) => (
 
@@ -28,7 +28,7 @@ const MostpickedHotel = () => {
 
                             <img src={item.image} alt="img" className='md:size-56 w-full object-cover object-top' />
 
-                            <div className='absolute inset-0 flex flex-col justify-end p-4 text-white bg-black/50 opacity-0 group-hover:opacity-100 trsnsition-all duration-300'>
+                            <div className='absolute inset-0 flex flex-col justify-end md:p-4 p-2 text-white bg-black/50 opacity-0 group-hover:opacity-100 trsnsition-all duration-300'>
                                 <h1 className='text-lg font-medium'>{item.name}</h1>
                                 <p className='text-sm'>{item.address}</p>
                                 <h1 className='text-sm'>{item.price}</h1>

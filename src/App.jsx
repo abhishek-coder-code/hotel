@@ -18,27 +18,31 @@ const App = () => {
 
   const location = useLocation();
   return (
+    // <div className="flex flex-col min-h-screen">
     <div className="w-full mx-auto">
-      <Toaster />
-      <Navbar />
-      <div className="">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/hotel" element={<Hotel />} />
-          <Route path="/room" element={<Room />} />
-          <Route path="/singleroom" element={<SingleRoom />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/my-booking" element={<MyBooking />} />
-        </Routes>
+        <Toaster />
+        <Navbar />
+        <div className="">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/hotel" element={<Hotel />} />
+            <Route path="/room" element={<Room key={location.pathname} />} />
+            <Route path="/room/:id" element={<SingleRoom />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/my-booking" element={<MyBooking />} />
+          </Routes>
+        </div>
+
+        {/* {location.pathname !== '/login' && location.pathname !== 'signup' && <Footer />} */}
+
+        {location.pathname !== '/login' && location.pathname !== '/signup' && <Footer />}
+
+
+
       </div>
-
-      {location.pathname !== '/login' && location.pathname !== 'signup' && <Footer />}
-
-
-    </div>
-  );
+      );
 };
 
-export default App;
+      export default App;
